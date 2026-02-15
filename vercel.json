@@ -1,10 +1,15 @@
 {
-  "functions": {
-    "api/callback.py": {
-      "runtime": "python3.11"
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
-    { "src": "/callback", "dest": "/api/callback" }
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
   ]
 }
