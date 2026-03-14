@@ -1,5 +1,4 @@
-import sys
-sys.path.append("..")
+
 import os
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
