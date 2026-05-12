@@ -17,7 +17,7 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 @app.route("/", methods=["GET"])
 def home():
-    return "StarCandy Bot is running!"
+    return "<h1>StarCandy Bot is running!</h1>"
 
 @app.route("/callback", methods=['POST'])
 def callback():
