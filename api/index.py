@@ -41,6 +41,8 @@ def handle_message(event):
         reply_text = draw_tarot()
     elif user_message in ["謝謝星星糖", "謝謝"]:
         reply_text = "不客氣！天天順心！"
+    elif user_message in ["意見箱", "回饋", "問題回報"]:
+        reply_text = "如果有任何問題想告訴星星糖，歡迎匿名留言：https://tally.so/r/eqK41e"
     else:
         reply_text = "如果您想要星星糖幫您算算的話，請輸入：星星糖我要占卜 或 星星糖我要抽籤"
 
